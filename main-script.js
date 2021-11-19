@@ -67,7 +67,7 @@ function renderItems(itemName) {
         name.innerHTML = item.name;
         div.appendChild(image);
         div.appendChild(name);
-        return "";
+       
       });
       break;
     case "breakfast":
