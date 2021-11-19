@@ -60,7 +60,7 @@ function renderItems(itemName) {
   switch (itemName) {
     case "all":
       deleteItems();
-      ItemArray.forEach((item, index) => {
+      ItemArray.map((item, index) => {
         var image = document.createElement("img");
         var name = document.createElement("p");
         image.src = item.img;
@@ -73,7 +73,7 @@ function renderItems(itemName) {
     case "breakfast":
       deleteItems();
       var arr = ItemArray.filter((value) => value.type === "breakfast");
-      arr.forEach((item, index) => {
+      arr.map((item, index) => {
         var image = document.createElement("img");
         var name = document.createElement("p");
         image.src = item.img;
@@ -85,7 +85,7 @@ function renderItems(itemName) {
     case "lunch":
       deleteItems();
       var arr = ItemArray.filter((value) => value.type === "lunch");
-      arr.forEach((item, index) => {
+      arr.map((item, index) => {
         var image = document.createElement("img");
         var name = document.createElement("p");
         image.src = item.img;
@@ -97,7 +97,7 @@ function renderItems(itemName) {
     case "dinner":
       deleteItems();
       var arr = ItemArray.filter((value) => value.type === "dinner");
-      arr.forEach((item, index) => {
+      arr.map((item, index) => {
         var image = document.createElement("img");
         var name = document.createElement("p");
         image.src = item.img;
