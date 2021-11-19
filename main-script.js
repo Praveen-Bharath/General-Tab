@@ -84,7 +84,7 @@ function renderItems(itemName) {
     case "breakfast":
       deleteItems();
       var arraybreakfast = ItemArray.filter((value) => value.type === "breakfast");
-      arraybreakfast.forEach((breakfastitem, breakfastindex) => {
+      arraybreakfast.forEach((breakfastitem, breakfastindex) {
         var image = document.createElement("img");
         var name = document.createElement("p");
         image.src = item.img;
