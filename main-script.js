@@ -109,7 +109,6 @@ function renderItems(itemName) {
   }
 }
 function deleteItems() {
-  var div = document.getElementById("itemlist");
   if (div.hasChildNodes()) {
     var child = div.lastElementChild;
     while (child) {
