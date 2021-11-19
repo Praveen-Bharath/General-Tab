@@ -55,11 +55,11 @@ var ItemArray = [
     type: "dinner",
   },
 ];
+var div = document.getElementById("itemlist");
 function renderItems(itemName) {
   switch (itemName) {
     case "all":
       deleteItems();
-      var div = document.getElementById("itemlist");
       ItemArray.forEach((item, index) => {
         var image = document.createElement("img");
         var name = document.createElement("p");
@@ -72,9 +72,8 @@ function renderItems(itemName) {
       break;
     case "breakfast":
       deleteItems();
-      var div = document.getElementById("itemlist");
       var arr = ItemArray.filter((value) => value.type === "breakfast");
-      arr.map((item, index) => {
+      arr.forEach((item, index) => {
         var image = document.createElement("img");
         var name = document.createElement("p");
         image.src = item.img;
@@ -85,9 +84,8 @@ function renderItems(itemName) {
       break;
     case "lunch":
       deleteItems();
-      var div = document.getElementById("itemlist");
       var arr = ItemArray.filter((value) => value.type === "lunch");
-      arr.map((item, index) => {
+      arr.forEach((item, index) => {
         var image = document.createElement("img");
         var name = document.createElement("p");
         image.src = item.img;
@@ -98,9 +96,8 @@ function renderItems(itemName) {
       break;
     case "dinner":
       deleteItems();
-      var div = document.getElementById("itemlist");
       var arr = ItemArray.filter((value) => value.type === "dinner");
-      arr.map((item, index) => {
+      arr.forEach((item, index) => {
         var image = document.createElement("img");
         var name = document.createElement("p");
         image.src = item.img;
