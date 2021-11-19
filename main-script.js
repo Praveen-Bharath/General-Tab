@@ -60,7 +60,7 @@ function renderItems(itemName) {
     case "all":
       deleteItems();
       var div = document.getElementById("itemlist");
-      ItemArray.map((item, index) => {
+      ItemArray.forEach((item, index) => {
         var image = document.createElement("img");
         var name = document.createElement("p");
         image.src = item.img;
